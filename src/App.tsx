@@ -23,7 +23,7 @@ function App() {
           <>
             <Route path="/" element={Cookies.get("userAuth") === undefined ? <Auth/> : <Home/>}/>
             <Route path="/auth" element={<Auth/>}/>
-            <Route path="/login" element={<Login/>}/>
+            <Route path="/login" element={Cookies.get("userAuth") === undefined ? <Login/> : <Auth/>} />
             <Route path= "*" element={<NotFound />}/>
           </>
         </Routes>

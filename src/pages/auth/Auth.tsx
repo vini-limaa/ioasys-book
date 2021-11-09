@@ -10,6 +10,10 @@ function Auth() {
         }
     }();
 
+    Cookies.get("userAuth") !== undefined && function(){
+        window.location.assign("/");
+    }();
+
     return ( 
         <>
         </>
