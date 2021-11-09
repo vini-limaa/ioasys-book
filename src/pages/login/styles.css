@@ -1,0 +1,111 @@
+.login main {
+  background-image: url("../../assets/images/login-bg-mob.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
+  margin: 0px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.login section {
+  width: 100%;
+  margin: auto 20px;
+}
+
+.title {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 28px;
+  line-height: 40px;
+  color: #FFFFFF;
+}
+
+input {
+  width: 100%;
+  max-width: -webkit-fill-available;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: #fff;
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  background: rgba(0, 0, 0, 0.32);
+  backdrop-filter: blur(2px);
+  border-radius: 4px;
+  margin: 20px auto;
+  padding: 10px 15px;
+  position: relative;
+}
+
+
+.item__label__text {
+  margin: 0px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 16px;
+  color: #FFFFFF;
+  opacity: 0.5;
+}
+
+.item__content {
+  display: flex;
+  flex-direction: row;
+}
+
+.item__content__btn {
+  background: #FFFFFF;
+  border-radius: 44px;
+  border: none;
+  padding: 5px 15px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 20px;
+  color: #B22E6F;
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.item__content__btn:hover {
+  color: #fff;
+  background: #B22E6F;
+  border: #fff 2px solid;
+}
+
+.tooltip{
+  background: rgba(255, 255, 255, 0.4);
+  -webkit-backdrop-filter: blur(2px);
+  backdrop-filter: blur(2px);
+  border-radius: 4px;
+  width: fit-content;
+  padding: 10px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 16px;
+  color: #FFFFFF;
+}
+
+@media (min-width: 1024px){
+  .login main {
+    background-image: url("../../assets/images/login-bg-desk.png");
+    justify-content: flex-start;
+  }
+
+  .login section {
+    max-width: 370px;
+    margin-left: 50px;
+  }
+}

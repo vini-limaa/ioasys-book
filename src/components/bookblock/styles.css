@@ -1,0 +1,214 @@
+.articleBook {
+  width: 100%;
+  flex: 1 24%;
+}
+
+.book {
+  background: #FFFFFF;
+  box-shadow: 0px 6px 24px rgba(84, 16, 95, 0.13);
+  border-radius: 4px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 15px 10px;
+  column-gap: 10px;
+  cursor: pointer;
+}
+
+.book__infos {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  position: relative;
+  justify-content: space-between;
+}
+
+.book__infos__titles p, .book_infos_spec p {
+  margin: 0px;
+}
+
+.book_infos_spec {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 20px;
+  color: #999999;
+}
+
+.book__title {
+  font-style: normal;
+  font-weight: 500;
+  color: #333333;
+}
+
+.book__author{
+  font-style: normal;
+  font-weight: normal;
+  color: #AB2680;
+}
+
+.book__image__block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.book__image {
+  max-width: 120px;
+}
+
+.book_infos_spec {
+  padding-bottom: 10px;
+}
+
+.ReactModal__Overlay {
+  background: rgba(0, 0, 0, 0.4) !important;
+  backdrop-filter: blur(2px);
+}
+
+.bookModal{
+  position: absolute;
+  inset: 70px 20px 20px 20px;
+  border: 1px solid rgb(204, 204, 204);
+  background: rgb(255, 255, 255);
+  overflow: auto;
+  border-radius: 4px;
+  outline: none;
+  padding: 20px;
+}
+
+.bookModal__info p{
+  margin: 0;
+}
+
+.bookModal__image {
+  display: flex;
+  justify-content: center;
+}
+
+.bookModal__image img {
+  max-width: 100%;
+  height: auto;
+}
+
+.bookModal__title {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 28px;
+  color: #333333;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+  -webkit-box-orient: vertical;
+  margin: 0;
+}
+
+.bookModal__author {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 20px;
+  color: #AB2680;
+  margin: 0;
+}
+
+.bookModal__info__title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 28px;
+  text-transform: uppercase;
+  color: #333333;
+}
+
+.bookModal__info {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.bookModal__info__labels {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 20px;
+  color: #333333;
+}
+
+
+.bookModal__info__content {
+  text-align: end;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 20px;
+  text-align: right;
+  color: #999999;
+}
+
+.bookModal__resume__text {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 20px;
+  color: #999999;
+}
+
+.bookModal__info__title {
+  margin: 20px auto;
+}
+
+.bookModal__closeIcon {
+  margin: 0px;
+  padding: 0px;
+  border: none;
+  background: transparent;
+  border-radius: 20px;
+  display: flex;
+  cursor: pointer;
+  position: fixed;
+  top: 20px;
+  right: 20px;
+}
+
+@media (max-width: 768px){
+  
+  .articleBook {
+    width: 100%;
+    flex: 1 33%;
+  }
+}
+
+@media (min-width: 1024px){
+
+  .bookModal {
+    max-width: 770px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: -webkit-fill-available;
+    max-height: 610px;
+    height: -webkit-fill-available;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .bookModal__content {
+    display: flex;
+    flex-direction: row;
+    column-gap: 20px;
+  }
+
+  .bookModal__image img {
+    max-width: unset;
+    width: auto;
+  }
+
+  .bookModal__infos {
+    /* width: 40%; */
+  }
+}
